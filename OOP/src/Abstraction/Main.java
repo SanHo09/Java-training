@@ -1,4 +1,4 @@
-package Polymorphism;
+package Abstraction;
 
 
 public class Main {

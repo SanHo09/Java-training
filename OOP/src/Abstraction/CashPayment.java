@@ -1,8 +1,7 @@
-package Polymorphism;
+package Abstraction;
 
-import InheritancePolymorphism.Payment;
 
-public class CreditCardPayment implements IPayment {
+public class CashPayment implements IPayment {
     public double Balance;
 
     @Override
@@ -15,10 +14,8 @@ public class CreditCardPayment implements IPayment {
         this.Balance = amount;
     }
 
-    @Override
     public void pay(double amount) {
-        System.out.println("Paid " + amount + " by credit card");
-        this.Balance = this.Balance - (amount + amount * 10/100);
+        System.out.println("Paid " + amount + " by cash");
         System.out.println("Remaining: " + this.GetBalance());
     }
 }
